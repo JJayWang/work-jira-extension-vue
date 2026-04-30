@@ -1,0 +1,109 @@
+{
+  "name": "work-jira-extension",
+  "displayName": "work-jira-extension",
+  "description": "",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "^1.110.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "work-jira-extension.helloWorld",
+        "title": "Hello World"
+      },
+      {
+        "command": "work-jira-extension.setToken",
+        "title": "Setting Work Jira Token"
+      },
+      {
+        "command": "work-jira-extension.removeToken",
+        "title": "Remove Work Jira Token"
+      },
+      {
+        "command": "work-jira-extension.test",
+        "title": "Test Jira"
+      },
+      {
+        "command": "work-jira-extension.syncJira",
+        "title": "Sync Jira",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "work-jira-extension.changeStatus",
+        "title": "Change Status"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "work-jira-sidebar",
+          "title": "Jira Extension",
+          "icon": "$(repo-pinned)"
+        }
+      ]
+    },
+    "views": {
+      "work-jira-sidebar": [
+        {
+          "type": "webview",
+          "id": "work-jira-content",
+          "name": "",
+          "icon": "$(refresh)"
+        }
+      ]
+    },
+    "menus": {
+      "view/title": [
+        {
+          "command": "work-jira-extension.syncJira",
+          "when": "view == 'work-jira-content'",
+          "group": "navigation"
+        },
+        {
+          "command": "work-jira-extension.changeStatus",
+          "when": "view == 'work-jira-content'"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Work Jira Extension",
+      "properties": {
+        "wJiraExt.baseUrl": {
+          "type": "string",
+          "default": "https://your-domain.atlassian.net",
+          "description": "Jira Base URL"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test",
+    "build": "vsce package --allow-missing-repository"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@types/vscode": "^1.110.0",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.39.3",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.56.1"
+  },
+  "dependencies": {
+    "@vscode/codicons": "^0.0.45"
+  }
+}
