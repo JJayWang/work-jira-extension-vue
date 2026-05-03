@@ -1,0 +1,1 @@
+import{i as e,l as t,s as n,t as r}from"./index-Bz3Hos4K.js";var i={};function a(r,i){let a=t(`RouterView`);return n(),e(a)}var o=r(i,[[`render`,a]]);export{o as default};
