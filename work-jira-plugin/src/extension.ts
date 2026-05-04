@@ -1,24 +1,18 @@
 import * as vscode from "vscode";
 import { COMMAND_VAL } from "./contants/command.constant";
 import { PrimaryContentProvider } from "./provider/PrimaryContentProvider";
-import { InitialScriptModel } from "./types/common.type";
 import { JiraApiService } from "./api/jira.service";
 
 export async function activate(context: vscode.ExtensionContext) {
   const tokenKey = "work-jira-token";
   const token = await context.secrets.get(tokenKey);
-  const hasToken = Boolean(token);
 
   const config = vscode.workspace.getConfiguration("wJiraExt");
   const baseUrl = config.get<string>("baseUrl");
 
   const jiraService = new JiraApiService(baseUrl!, token!);
 
-  const initialScript: InitialScriptModel = {
-    hasToken,
-  };
-
-  const provider = new PrimaryContentProvider(context, initialScript);
+  const provider = new PrimaryContentProvider(context);
 
   context.subscriptions.push(
     vscode.window.registerWebviewViewProvider("work-jira-content", provider, {

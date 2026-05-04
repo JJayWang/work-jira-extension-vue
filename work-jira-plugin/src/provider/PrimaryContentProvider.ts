@@ -1,18 +1,15 @@
-import vscode from "vscode";
-import { getNonce } from "../utils/getNonce";
+import vscode, { Uri } from "vscode";
 import path from "path";
 import fs from "fs";
-import { InitialScriptModel } from "../types/common.type";
 import { JiraWorkItemModel } from "../types/jira.work.type";
+import { getNonce } from "../utils/getNonce";
 
 export class PrimaryContentProvider implements vscode.WebviewViewProvider {
   private _view?: vscode.WebviewView;
   private pathPrefix = "media";
+  private vueOutput = "vue-dist";
 
-  constructor(
-    private readonly _context: vscode.ExtensionContext,
-    private readonly _initData: InitialScriptModel,
-  ) {}
+  constructor(private readonly _context: vscode.ExtensionContext) {}
 
   resolveWebviewView(
     webviewView: vscode.WebviewView,
@@ -25,7 +22,8 @@ export class PrimaryContentProvider implements vscode.WebviewViewProvider {
       enableScripts: true,
       // localResourceRoots: [
       //   // 必須包含 media 資料夾路徑
-      //   vscode.Uri.joinPath(this._context.extensionUri, "media"),
+      //   Uri.file(path.join(this._context.extensionPath, "media")),
+      //   // vscode.Uri.joinPath(this._context.extensionUri, "media"),
       // ],
     };
 
@@ -57,9 +55,9 @@ export class PrimaryContentProvider implements vscode.WebviewViewProvider {
   }
 
   private _getHtmlForWebview() {
-    // Get the local path to main script run in the webview, then convert it to a uri we can use in the webview.
-    const scriptUri = this.getStaticPath("assets/index-BujxjlMy.js");
-    const styleMain = this.getStaticPath("assets/index-DEm2-gV0.css");
+    const assets = this.getViteAssets();
+    const scriptUri = this.getStaticPath(assets?.js);
+    const styleMain = this.getStaticPath(assets?.css[0]);
 
     let html = fs.readFileSync(
       path.join(
@@ -86,7 +84,39 @@ export class PrimaryContentProvider implements vscode.WebviewViewProvider {
 
   private getStaticPath(file: string) {
     return this._view?.webview.asWebviewUri(
-      vscode.Uri.joinPath(this._context.extensionUri, this.pathPrefix, file),
+      vscode.Uri.joinPath(
+        this._context.extensionUri,
+        `${this.pathPrefix}/${this.vueOutput}`,
+        file,
+      ),
     );
+  }
+
+  private getViteAssets() {
+    try {
+      // 1. 讀取檔案內容
+      const manifestContent = fs.readFileSync(
+        path.join(
+          this._context.extensionPath.toString(),
+          `${this.pathPrefix}/${this.vueOutput}/.vite/manifest.json`,
+        ),
+        "utf-8",
+      );
+
+      // 2. 解析為 JSON
+      const manifest = JSON.parse(manifestContent);
+      console.log(manifest);
+      // 3. 取得進入點資訊 (通常是 src/main.ts 或 index.html)
+      // 註：這要對應你當初在 Vite 中的進入點路徑
+      const entry = manifest["index.html"];
+
+      return {
+        js: entry.file, // 主要的 JS 檔名
+        css: entry.css ? entry.css : [], // CSS 檔案列表 (陣列)
+      };
+    } catch (error) {
+      console.error("無法讀取 Manifest:", error);
+      return null;
+    }
   }
 }
