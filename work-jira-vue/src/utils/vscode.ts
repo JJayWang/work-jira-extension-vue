@@ -15,12 +15,28 @@ class VSCodeAPIWrapper {
   }
 
   public getState() {
-    return this.vsCodeApi?.getState();
+    return this.vsCodeApi?.getState() || { issues: [], hasToken: false };
   }
 
-  public setState(state: VSCodeStateType) {
+  public setState<T>(key: keyof VSCodeStateType, value: T) {
+    const state = this.getState();
+    state[key] = value as any;
     this.vsCodeApi?.setState(state);
   }
 }
 
 export const vscode = new VSCodeAPIWrapper();
+
+export const registEvent = <T>(type: string, callback: (data: T) => void) => {
+  const handler = (evt: MessageEvent<{ type: string; value: T }>) => {
+    const message = evt.data;
+    if (message.type === type) {
+      callback(message.value as T);
+    }
+  };
+  window.addEventListener('message', handler);
+
+  return () => {
+    window.removeEventListener('message', handler);
+  };
+};

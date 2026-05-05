@@ -1,6 +1,6 @@
 {
   "index.html": {
-    "file": "assets/index-Bz3Hos4K.js",
+    "file": "assets/index-k_XKxPxr.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
@@ -9,7 +9,7 @@
       "src/views/JiraList.vue"
     ],
     "css": [
-      "assets/index-C207ha3E.css"
+      "assets/index-D_NWqVdz.css"
     ],
     "assets": [
       "assets/codicon-DjkITdqj.ttf"
@@ -20,7 +20,7 @@
     "src": "node_modules/@vscode/codicons/dist/codicon.ttf"
   },
   "src/layout/MainLaylout.vue": {
-    "file": "assets/MainLaylout-CZvBmYXV.js",
+    "file": "assets/MainLaylout-B01KZNxO.js",
     "name": "MainLaylout",
     "src": "src/layout/MainLaylout.vue",
     "isDynamicEntry": true,
@@ -29,7 +29,7 @@
     ]
   },
   "src/views/JiraList.vue": {
-    "file": "assets/JiraList-DKgqWuky.js",
+    "file": "assets/JiraList-D90PLp3r.js",
     "name": "JiraList",
     "src": "src/views/JiraList.vue",
     "isDynamicEntry": true,
@@ -37,7 +37,7 @@
       "index.html"
     ],
     "css": [
-      "assets/JiraList-CT8fgSCO.css"
+      "assets/JiraList-D33rCQB4.css"
     ]
   }
 }

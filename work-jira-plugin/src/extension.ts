@@ -52,7 +52,11 @@ export async function activate(context: vscode.ExtensionContext) {
     vscode.commands.registerCommand(
       COMMAND_VAL.SyncIssue,
       async (status: string[]) => {
-        const data = await jiraService.getMyIssue(status);
+        provider.setLoading(true);
+        const data = await jiraService.getMyIssue(
+          status || context.globalState.get<string[]>("selectedStaus"),
+        );
+        provider.setLoading(false);
         const issues = data.issues.map((item) => ({
           id: item.id,
           key: item.key,
@@ -64,7 +68,7 @@ export async function activate(context: vscode.ExtensionContext) {
           dueDate: item.fields.customfield_12574,
         }));
 
-        provider.setData(issues);
+        provider.setIssues(issues);
       },
     ),
   );
