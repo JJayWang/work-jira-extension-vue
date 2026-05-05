@@ -40,6 +40,13 @@ export class PrimaryContentProvider implements vscode.WebviewViewProvider {
     });
   }
 
+  public setLoading(show: boolean) {
+    this._view?.webview.postMessage({
+      type: "SET_LOADING",
+      value: show,
+    });
+  }
+
   public notifyOpenBtn(show: boolean) {
     this._view?.webview.postMessage({
       type: "toggle-openBtn-show",
@@ -47,9 +54,9 @@ export class PrimaryContentProvider implements vscode.WebviewViewProvider {
     });
   }
 
-  public setData(data: JiraWorkItemModel[]) {
+  public setIssues(data: JiraWorkItemModel[]) {
     this._view?.webview.postMessage({
-      type: "set-data",
+      type: "SET_ISSUES",
       value: data,
     });
   }
