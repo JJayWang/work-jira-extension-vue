@@ -1,4 +1,5 @@
 export type VSCodeStateType = {
+  hasToken: false;
   issues: IssueStateType[];
 };
 

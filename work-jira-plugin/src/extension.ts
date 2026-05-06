@@ -5,12 +5,21 @@ import { JiraApiService } from "./api/jira.service";
 
 export async function activate(context: vscode.ExtensionContext) {
   const tokenKey = "work-jira-token";
-  const token = await context.secrets.get(tokenKey);
+
+  context.secrets.onDidChange(async (evt) => {
+    if (evt.key === tokenKey) {
+      const token = !!(await context.secrets.get(tokenKey));
+      provider.setHasToken(token);
+    }
+  });
 
   const config = vscode.workspace.getConfiguration("wJiraExt");
   const baseUrl = config.get<string>("baseUrl");
 
-  const jiraService = new JiraApiService(baseUrl!, token!);
+  const jiraService = new JiraApiService(
+    baseUrl!,
+    async () => (await context.secrets.get(tokenKey)) || "",
+  );
 
   const provider = new PrimaryContentProvider(context);
 
@@ -32,7 +41,6 @@ export async function activate(context: vscode.ExtensionContext) {
 
       if (token) {
         context.secrets.store(tokenKey, token);
-        provider.notifyOpenBtn(true);
       } else {
         vscode.window.showErrorMessage("No token save!");
         return;
@@ -43,7 +51,6 @@ export async function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
     vscode.commands.registerCommand(COMMAND_VAL.RemoveToken, () => {
       context.secrets.delete(tokenKey);
-      provider.notifyOpenBtn(false);
     }),
   );
 
@@ -52,48 +59,59 @@ export async function activate(context: vscode.ExtensionContext) {
     vscode.commands.registerCommand(
       COMMAND_VAL.SyncIssue,
       async (status: string[]) => {
-        provider.setLoading(true);
-        const data = await jiraService.getMyIssue(
-          status || context.globalState.get<string[]>("selectedStaus"),
-        );
-        provider.setLoading(false);
-        const issues = data.issues.map((item) => ({
-          id: item.id,
-          key: item.key,
-          name: item.fields.summary,
-          status: {
-            id: item.fields.status.id,
-            name: item.fields.status.name,
-          },
-          dueDate: item.fields.customfield_12574,
-        }));
+        if (await context.secrets.get(tokenKey)) {
+          provider.setLoading(true);
+          const data = await jiraService.getMyIssue(
+            status || context.globalState.get<string[]>("selectedStaus"),
+          );
+          provider.setLoading(false);
 
-        provider.setIssues(issues);
+          const issues = data.issues.map((item) => ({
+            id: item.id,
+            key: item.key,
+            name: item.fields.summary,
+            status: {
+              id: item.fields.status.id,
+              name: item.fields.status.name,
+            },
+            dueDate: item.fields.customfield_12574,
+          }));
+
+          provider.setIssues(issues);
+        }
       },
     ),
   );
 
   context.subscriptions.push(
     vscode.commands.registerCommand(COMMAND_VAL.ChangeStatus, async () => {
-      const key = "selectedStaus";
-      const selectedLast = context.globalState.get<string[]>(key) || [];
+      if (await context.secrets.get(tokenKey)) {
+        const key = "selectedStaus";
+        const selectedLast = context.globalState.get<string[]>(key) || [];
 
-      const status = ["待處理", "處理中", "Code Review", "SIT"];
-      const selected = await vscode.window.showQuickPick(
-        status.map((item) => ({
-          label: item,
-          picked: !selectedLast.length || selectedLast.includes(item),
-        })),
-        {
-          canPickMany: true,
-        },
-      );
+        const status = ["待處理", "處理中", "Code Review", "SIT"];
+        const selected = await vscode.window.showQuickPick(
+          status.map((item) => ({
+            label: item,
+            picked: !selectedLast.length || selectedLast.includes(item),
+          })),
+          {
+            canPickMany: true,
+          },
+        );
 
-      if (selected) {
-        const selectedStatus = selected.map((item) => item.label);
-        context.globalState.update(key, selectedStatus);
-        vscode.commands.executeCommand(COMMAND_VAL.SyncIssue, selectedStatus);
+        if (selected) {
+          const selectedStatus = selected.map((item) => item.label);
+          context.globalState.update(key, selectedStatus);
+          vscode.commands.executeCommand(COMMAND_VAL.SyncIssue, selectedStatus);
+        }
       }
+    }),
+  );
+
+  context.subscriptions.push(
+    vscode.commands.registerCommand("work-jira-extension.test", () => {
+      provider.resetState();
     }),
   );
 }

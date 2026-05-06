@@ -1,3 +1,16 @@
 body {
   padding: 0;
 }
+
+.vscode-btn-style {
+  color: var(--vscode-button-foreground);
+  background-color: var(--vscode-button-background);
+  border: 1px solid var(--vscode-button-border);
+  width: 100%;
+  border-radius: 4px;
+  padding: 4px 10px;
+}
+
+.vscode-btn-style:hover {
+  background-color: var(--vscode-button-hoverBackground);
+}

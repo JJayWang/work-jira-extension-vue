@@ -1,15 +1,16 @@
 {
   "index.html": {
-    "file": "assets/index-k_XKxPxr.js",
+    "file": "assets/index-BBuvIH_R.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
     "dynamicImports": [
+      "src/views/TheWelcome.vue",
       "src/layout/MainLaylout.vue",
       "src/views/JiraList.vue"
     ],
     "css": [
-      "assets/index-D_NWqVdz.css"
+      "assets/index-CjO3QRVM.css"
     ],
     "assets": [
       "assets/codicon-DjkITdqj.ttf"
@@ -20,7 +21,7 @@
     "src": "node_modules/@vscode/codicons/dist/codicon.ttf"
   },
   "src/layout/MainLaylout.vue": {
-    "file": "assets/MainLaylout-B01KZNxO.js",
+    "file": "assets/MainLaylout-DsEIj-Ze.js",
     "name": "MainLaylout",
     "src": "src/layout/MainLaylout.vue",
     "isDynamicEntry": true,
@@ -29,7 +30,7 @@
     ]
   },
   "src/views/JiraList.vue": {
-    "file": "assets/JiraList-D90PLp3r.js",
+    "file": "assets/JiraList-Arw2x47J.js",
     "name": "JiraList",
     "src": "src/views/JiraList.vue",
     "isDynamicEntry": true,
@@ -37,7 +38,16 @@
       "index.html"
     ],
     "css": [
-      "assets/JiraList-D33rCQB4.css"
+      "assets/JiraList-DkYlkNAn.css"
+    ]
+  },
+  "src/views/TheWelcome.vue": {
+    "file": "assets/TheWelcome-BtoIjQ8H.js",
+    "name": "TheWelcome",
+    "src": "src/views/TheWelcome.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
     ]
   }
 }

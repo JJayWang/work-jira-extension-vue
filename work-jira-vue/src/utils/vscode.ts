@@ -14,14 +14,26 @@ class VSCodeAPIWrapper {
     this.vsCodeApi?.postMessage(message);
   }
 
-  public getState() {
+  public getAllState() {
     return this.vsCodeApi?.getState() || { issues: [], hasToken: false };
   }
 
+  public getState<T>(key: keyof VSCodeStateType) {
+    const state = this.getAllState();
+    return state[key] as T;
+  }
+
   public setState<T>(key: keyof VSCodeStateType, value: T) {
-    const state = this.getState();
+    const state = this.getAllState();
     state[key] = value as any;
     this.vsCodeApi?.setState(state);
+  }
+
+  public resetState() {
+    this.vsCodeApi?.setState({
+      hasToken: false,
+      issues: [],
+    });
   }
 }
 

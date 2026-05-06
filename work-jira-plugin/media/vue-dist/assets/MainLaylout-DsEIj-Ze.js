@@ -1,0 +1,1 @@
+import{f as e,o as t,t as n,u as r}from"./index-BBuvIH_R.js";var i={};function a(n,i){let a=e(`RouterView`);return r(),t(a)}var o=n(i,[[`render`,a]]);export{o as default};

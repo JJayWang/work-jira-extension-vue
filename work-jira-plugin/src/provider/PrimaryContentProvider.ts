@@ -1,4 +1,4 @@
-import vscode, { Uri } from "vscode";
+import vscode from "vscode";
 import path from "path";
 import fs from "fs";
 import { JiraWorkItemModel } from "../types/jira.work.type";
@@ -20,18 +20,13 @@ export class PrimaryContentProvider implements vscode.WebviewViewProvider {
 
     webviewView.webview.options = {
       enableScripts: true,
-      // localResourceRoots: [
-      //   // 必須包含 media 資料夾路徑
-      //   Uri.file(path.join(this._context.extensionPath, "media")),
-      //   // vscode.Uri.joinPath(this._context.extensionUri, "media"),
-      // ],
     };
 
     webviewView.webview.html = this._getHtmlForWebview();
 
     webviewView.webview.onDidReceiveMessage((data) => {
       switch (data.type) {
-        case "openEnterToken":
+        case "SETTING_TOKEN":
           vscode.commands.executeCommand("work-jira-extension.setToken");
           break;
         default:
@@ -47,17 +42,22 @@ export class PrimaryContentProvider implements vscode.WebviewViewProvider {
     });
   }
 
-  public notifyOpenBtn(show: boolean) {
-    this._view?.webview.postMessage({
-      type: "toggle-openBtn-show",
-      value: show,
-    });
+  public setHasToken(value: boolean) {
+    this._view?.webview.postMessage({ type: "SET_HASTOKEN", value });
   }
 
   public setIssues(data: JiraWorkItemModel[]) {
     this._view?.webview.postMessage({
       type: "SET_ISSUES",
       value: data,
+    });
+
+    this.syncState();
+  }
+
+  private syncState() {
+    this._view?.webview.postMessage({
+      type: "SYNC_STATE",
     });
   }
 
@@ -112,7 +112,6 @@ export class PrimaryContentProvider implements vscode.WebviewViewProvider {
 
       // 2. 解析為 JSON
       const manifest = JSON.parse(manifestContent);
-      console.log(manifest);
       // 3. 取得進入點資訊 (通常是 src/main.ts 或 index.html)
       // 註：這要對應你當初在 Vite 中的進入點路徑
       const entry = manifest["index.html"];
@@ -125,5 +124,10 @@ export class PrimaryContentProvider implements vscode.WebviewViewProvider {
       console.error("無法讀取 Manifest:", error);
       return null;
     }
+  }
+
+  public resetState() {
+    this._view?.webview.postMessage({ type: "RESET_STATE" });
+    this.syncState();
   }
 }
