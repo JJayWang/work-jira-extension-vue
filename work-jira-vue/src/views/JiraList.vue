@@ -21,18 +21,18 @@ import { ref, onUnmounted, onMounted } from 'vue';
 import { vscode, registEvent } from '@/utils/vscode';
 import type { IssueStateType } from '@/types/VSCodeState';
 
-const jiraList = ref<IssueStateType[]>(vscode.getState()?.issues || []);
+const state = vscode.getAllState();
+const jiraList = ref<IssueStateType[]>(state.hasToken ? state.issues : []);
 
-const removeEvt = registEvent<IssueStateType[]>('SET_ISSUES', (data) => {
-  vscode.setState('issues', data);
-  jiraList.value = vscode.getState().issues;
+const evts = [
+  registEvent('SYNC_STATE', () => {
+    jiraList.value = vscode.getState('issues');
+  }),
+];
+
+onUnmounted(() => {
+  evts.map((destroy) => destroy());
 });
-
-onMounted(() => {
-  jiraList.value = vscode.getState().issues;
-});
-
-onUnmounted(() => removeEvt());
 </script>
 
 <style scoped lang="scss">

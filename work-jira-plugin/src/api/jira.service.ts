@@ -1,16 +1,19 @@
 import { JiraIssueApiResp } from "./jira.type";
 
+type TokenProvider = () => Promise<string> | string;
+
 export class JiraApiService {
   private _baseUrl = "";
-  private _token = "";
+  private _getToken: TokenProvider;
 
-  constructor(baseUrl: string, token: string) {
+  constructor(baseUrl: string, getToken: TokenProvider) {
     this._baseUrl = baseUrl;
-    this._token = token;
+    this._getToken = getToken;
   }
 
   public async getMyIssue(status: string[]): Promise<JiraIssueApiResp> {
-    //*all
+    const token = await this._getToken();
+
     const params = new URLSearchParams({
       jql: `project=iFOMS AND assignee=currentUser() ${status?.length ? `AND status in (${status.map((item) => `'${item}'`).join(",")})` : ""}`,
       fields: "project,summary,assignee,status,customfield_12574",
@@ -22,7 +25,7 @@ export class JiraApiService {
       {
         method: "GET",
         headers: {
-          Authorization: `Basic ${btoa(this._token)}`,
+          Authorization: `Basic ${btoa(token)}`,
         },
       },
     );
@@ -36,11 +39,10 @@ export class JiraApiService {
       {
         method: "GET",
         headers: {
-          Authorization: `Basic ${btoa(this._token)}`,
+          Authorization: `Basic ${btoa(await this._getToken())}`,
         },
       },
     );
     console.log(await resp.json());
-    // return (await resp.json()) as JiraIssueApiResp;
   }
 }

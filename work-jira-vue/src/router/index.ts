@@ -1,8 +1,14 @@
 import { createMemoryHistory, createRouter } from 'vue-router';
+import { vscode } from '@/utils/vscode';
 
 const router = createRouter({
   history: createMemoryHistory(import.meta.env.BASE_URL),
   routes: [
+    {
+      name: 'welcome',
+      path: '/welcome',
+      component: () => import('@/views/TheWelcome.vue'),
+    },
     {
       path: '/',
       component: () => import('@/layout/MainLaylout.vue'),
@@ -15,6 +21,16 @@ const router = createRouter({
       ],
     },
   ],
+});
+
+router.beforeEach((to, from, next) => {
+  const hasToken = vscode.getState('hasToken');
+  if (to.name !== 'welcome' && !hasToken) {
+    next('/welcome');
+    return false;
+  }
+
+  next();
 });
 
 export default router;

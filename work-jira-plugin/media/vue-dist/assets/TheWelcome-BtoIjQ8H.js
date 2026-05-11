@@ -1,0 +1,1 @@
+import{a as e,c as t,i as n,r,s as i,u as a}from"./index-BBuvIH_R.js";var o=t({__name:`TheWelcome`,setup(t){let o=()=>{r.postMessage({type:`SETTING_TOKEN`})};return(t,r)=>(a(),i(n,null,[r[0]||=e(`h3`,null,`尚未設定 Token`,-1),e(`button`,{class:`vscode-btn-style`,onClick:o},`設定 Token`)],64))}});export{o as default};
