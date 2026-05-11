@@ -1,6 +1,7 @@
 export type VSCodeStateType = {
   hasToken: false;
   issues: IssueStateType[];
+  issue: unknown;
 };
 
 export type IssueStateType = {

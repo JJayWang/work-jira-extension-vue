@@ -30,6 +30,11 @@ registEvent<boolean>('SET_HASTOKEN', (data) => {
 registEvent('RESET_STATE', () => {
   vscode.resetState();
 });
+
+registEvent('DISPLAY_ISSUE', (data) => {
+  vscode.setState('issue', data);
+  router.push('/issue');
+});
 </script>
 
 <style scoped lang="scss">

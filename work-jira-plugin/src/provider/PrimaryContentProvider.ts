@@ -3,6 +3,7 @@ import path from "path";
 import fs from "fs";
 import { JiraWorkItemModel } from "../types/jira.work.type";
 import { getNonce } from "../utils/getNonce";
+import { COMMAND_VAL } from "../contants/command.constant";
 
 export class PrimaryContentProvider implements vscode.WebviewViewProvider {
   private _view?: vscode.WebviewView;
@@ -29,6 +30,9 @@ export class PrimaryContentProvider implements vscode.WebviewViewProvider {
         case "SETTING_TOKEN":
           vscode.commands.executeCommand("work-jira-extension.setToken");
           break;
+        case "test":
+          vscode.commands.executeCommand(COMMAND_VAL.ViewIssue, data.value);
+          break;
         default:
           break;
       }
@@ -53,6 +57,13 @@ export class PrimaryContentProvider implements vscode.WebviewViewProvider {
     });
 
     this.syncState();
+  }
+
+  public displayIssue(issue: any) {
+    this._view?.webview.postMessage({
+      type: "DISPLAY_ISSUE",
+      value: issue,
+    });
   }
 
   private syncState() {

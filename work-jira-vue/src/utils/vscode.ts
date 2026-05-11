@@ -15,7 +15,9 @@ class VSCodeAPIWrapper {
   }
 
   public getAllState() {
-    return this.vsCodeApi?.getState() || { issues: [], hasToken: false };
+    return (
+      this.vsCodeApi?.getState() || ({ issues: [], hasToken: false, issue: {} } as VSCodeStateType)
+    );
   }
 
   public getState<T>(key: keyof VSCodeStateType) {
@@ -33,6 +35,7 @@ class VSCodeAPIWrapper {
     this.vsCodeApi?.setState({
       hasToken: false,
       issues: [],
+      issue: {},
     });
   }
 }

@@ -18,6 +18,10 @@ const router = createRouter({
           path: 'list',
           component: () => import('@/views/JiraList.vue'),
         },
+        {
+          path: 'issue',
+          component: () => import('@/views/IssueInfo.vue'),
+        },
       ],
     },
   ],

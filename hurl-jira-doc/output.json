@@ -1,0 +1,720 @@
+{
+  "startAt": 0,
+  "maxResults": 100,
+  "total": 13,
+  "comments": [
+    {
+      "self": "https://cybersoft4u.atlassian.net/rest/api/3/issue/116807/comment/191763",
+      "id": "191763",
+      "author": {
+        "self": "https://cybersoft4u.atlassian.net/rest/api/3/user?accountId=712020%3Af82e90f8-0a5e-48e8-8607-fce92632fd5f",
+        "accountId": "712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f",
+        "emailAddress": "maggiezheng@cybersoft.com.tw",
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/32"
+        },
+        "displayName": "MaggieZheng",
+        "active": true,
+        "timeZone": "Asia/Taipei",
+        "accountType": "atlassian"
+      },
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [{ "type": "text", "text": "規格書有異動，請拉最新版" }]
+          }
+        ]
+      },
+      "updateAuthor": {
+        "self": "https://cybersoft4u.atlassian.net/rest/api/3/user?accountId=712020%3Af82e90f8-0a5e-48e8-8607-fce92632fd5f",
+        "accountId": "712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f",
+        "emailAddress": "maggiezheng@cybersoft.com.tw",
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/32"
+        },
+        "displayName": "MaggieZheng",
+        "active": true,
+        "timeZone": "Asia/Taipei",
+        "accountType": "atlassian"
+      },
+      "created": "2026-01-08T14:10:44.595+0800",
+      "updated": "2026-01-08T14:10:44.595+0800",
+      "jsdPublic": true
+    },
+    {
+      "self": "https://cybersoft4u.atlassian.net/rest/api/3/issue/116807/comment/193332",
+      "id": "193332",
+      "author": {
+        "self": "https://cybersoft4u.atlassian.net/rest/api/3/user?accountId=712020%3Af2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e",
+        "accountId": "712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e",
+        "emailAddress": "jjaywang@cybersoft.com.tw",
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/32"
+        },
+        "displayName": "JJayWang",
+        "active": true,
+        "timeZone": "Asia/Taipei",
+        "accountType": "atlassian"
+      },
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              { "type": "text", "text": "PR " },
+              {
+                "type": "text",
+                "text": "提取要求 3487: Merge IFOMS-38-0119 into master",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://tfs.cybersoft.tw:8081/tfs/OAS/30_iFOMS/_git/ifoms-frontend/pullrequest/3487?_a=overview"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "updateAuthor": {
+        "self": "https://cybersoft4u.atlassian.net/rest/api/3/user?accountId=712020%3Af2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e",
+        "accountId": "712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e",
+        "emailAddress": "jjaywang@cybersoft.com.tw",
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/32"
+        },
+        "displayName": "JJayWang",
+        "active": true,
+        "timeZone": "Asia/Taipei",
+        "accountType": "atlassian"
+      },
+      "created": "2026-01-19T11:00:23.735+0800",
+      "updated": "2026-01-19T11:00:23.735+0800",
+      "jsdPublic": true
+    },
+    {
+      "self": "https://cybersoft4u.atlassian.net/rest/api/3/issue/116807/comment/195534",
+      "id": "195534",
+      "author": {
+        "self": "https://cybersoft4u.atlassian.net/rest/api/3/user?accountId=712020%3Af82e90f8-0a5e-48e8-8607-fce92632fd5f",
+        "accountId": "712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f",
+        "emailAddress": "maggiezheng@cybersoft.com.tw",
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/32"
+        },
+        "displayName": "MaggieZheng",
+        "active": true,
+        "timeZone": "Asia/Taipei",
+        "accountType": "atlassian"
+      },
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              { "type": "text", "text": "[F]欄位長度未檢核" },
+              { "type": "hardBreak" },
+              { "type": "text", "text": "[F]免密碼登入頁未顯示進階使用者按鈕" },
+              { "type": "hardBreak" },
+              { "type": "text", "text": "[F]登出時，提示訊息與規格不同" },
+              { "type": "hardBreak" },
+              {
+                "type": "text",
+                "text": "[F]忘記密碼頁送出後，\"操作成功\"提示字被換行"
+              }
+            ]
+          }
+        ]
+      },
+      "updateAuthor": {
+        "self": "https://cybersoft4u.atlassian.net/rest/api/3/user?accountId=712020%3Af82e90f8-0a5e-48e8-8607-fce92632fd5f",
+        "accountId": "712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f",
+        "emailAddress": "maggiezheng@cybersoft.com.tw",
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/32"
+        },
+        "displayName": "MaggieZheng",
+        "active": true,
+        "timeZone": "Asia/Taipei",
+        "accountType": "atlassian"
+      },
+      "created": "2026-02-02T14:47:57.092+0800",
+      "updated": "2026-02-02T14:47:57.092+0800",
+      "jsdPublic": true
+    },
+    {
+      "self": "https://cybersoft4u.atlassian.net/rest/api/3/issue/116807/comment/195604",
+      "id": "195604",
+      "author": {
+        "self": "https://cybersoft4u.atlassian.net/rest/api/3/user?accountId=712020%3Af2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e",
+        "accountId": "712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e",
+        "emailAddress": "jjaywang@cybersoft.com.tw",
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/32"
+        },
+        "displayName": "JJayWang",
+        "active": true,
+        "timeZone": "Asia/Taipei",
+        "accountType": "atlassian"
+      },
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              { "type": "text", "text": "PR " },
+              {
+                "type": "text",
+                "text": "提取要求 3574: Merge IFOMS-38-Fix into master",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://tfs.cybersoft.tw:8081/tfs/OAS/30_iFOMS/_git/ifoms-frontend/pullrequest/3574?_a=overview"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "updateAuthor": {
+        "self": "https://cybersoft4u.atlassian.net/rest/api/3/user?accountId=712020%3Af2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e",
+        "accountId": "712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e",
+        "emailAddress": "jjaywang@cybersoft.com.tw",
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/32"
+        },
+        "displayName": "JJayWang",
+        "active": true,
+        "timeZone": "Asia/Taipei",
+        "accountType": "atlassian"
+      },
+      "created": "2026-02-02T16:01:19.671+0800",
+      "updated": "2026-02-02T16:01:19.671+0800",
+      "jsdPublic": true
+    },
+    {
+      "self": "https://cybersoft4u.atlassian.net/rest/api/3/issue/116807/comment/196073",
+      "id": "196073",
+      "author": {
+        "self": "https://cybersoft4u.atlassian.net/rest/api/3/user?accountId=712020%3Af82e90f8-0a5e-48e8-8607-fce92632fd5f",
+        "accountId": "712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f",
+        "emailAddress": "maggiezheng@cybersoft.com.tw",
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/32"
+        },
+        "displayName": "MaggieZheng",
+        "active": true,
+        "timeZone": "Asia/Taipei",
+        "accountType": "atlassian"
+      },
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              { "type": "text", "text": "增加路由進入功能防呆，參閱規格書" }
+            ]
+          }
+        ]
+      },
+      "updateAuthor": {
+        "self": "https://cybersoft4u.atlassian.net/rest/api/3/user?accountId=712020%3Af82e90f8-0a5e-48e8-8607-fce92632fd5f",
+        "accountId": "712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f",
+        "emailAddress": "maggiezheng@cybersoft.com.tw",
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/32"
+        },
+        "displayName": "MaggieZheng",
+        "active": true,
+        "timeZone": "Asia/Taipei",
+        "accountType": "atlassian"
+      },
+      "created": "2026-02-04T13:25:19.958+0800",
+      "updated": "2026-02-04T13:25:19.958+0800",
+      "jsdPublic": true
+    },
+    {
+      "self": "https://cybersoft4u.atlassian.net/rest/api/3/issue/116807/comment/196901",
+      "id": "196901",
+      "author": {
+        "self": "https://cybersoft4u.atlassian.net/rest/api/3/user?accountId=712020%3Af2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e",
+        "accountId": "712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e",
+        "emailAddress": "jjaywang@cybersoft.com.tw",
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/32"
+        },
+        "displayName": "JJayWang",
+        "active": true,
+        "timeZone": "Asia/Taipei",
+        "accountType": "atlassian"
+      },
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              { "type": "text", "text": "PR " },
+              {
+                "type": "text",
+                "text": "提取要求 3607: Merge IFOMS-38-0206 into master",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://tfs.cybersoft.tw:8081/tfs/OAS/30_iFOMS/_git/ifoms-frontend/pullrequest/3607?_a=overview"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "updateAuthor": {
+        "self": "https://cybersoft4u.atlassian.net/rest/api/3/user?accountId=712020%3Af2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e",
+        "accountId": "712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e",
+        "emailAddress": "jjaywang@cybersoft.com.tw",
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/32"
+        },
+        "displayName": "JJayWang",
+        "active": true,
+        "timeZone": "Asia/Taipei",
+        "accountType": "atlassian"
+      },
+      "created": "2026-02-06T13:19:24.628+0800",
+      "updated": "2026-02-06T13:19:24.628+0800",
+      "jsdPublic": true
+    },
+    {
+      "self": "https://cybersoft4u.atlassian.net/rest/api/3/issue/116807/comment/197205",
+      "id": "197205",
+      "author": {
+        "self": "https://cybersoft4u.atlassian.net/rest/api/3/user?accountId=6205ff09f5d29a0068fc8ef5",
+        "accountId": "6205ff09f5d29a0068fc8ef5",
+        "emailAddress": "bennyyang@cybersoft4u.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/37750224ff9425f581cdb0d0605abb99?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FB-6.png",
+          "24x24": "https://secure.gravatar.com/avatar/37750224ff9425f581cdb0d0605abb99?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FB-6.png",
+          "16x16": "https://secure.gravatar.com/avatar/37750224ff9425f581cdb0d0605abb99?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FB-6.png",
+          "32x32": "https://secure.gravatar.com/avatar/37750224ff9425f581cdb0d0605abb99?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FB-6.png"
+        },
+        "displayName": "BennyYang",
+        "active": true,
+        "timeZone": "Asia/Taipei",
+        "accountType": "atlassian"
+      },
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [{ "type": "text", "text": "Code Review OK" }]
+          }
+        ]
+      },
+      "updateAuthor": {
+        "self": "https://cybersoft4u.atlassian.net/rest/api/3/user?accountId=6205ff09f5d29a0068fc8ef5",
+        "accountId": "6205ff09f5d29a0068fc8ef5",
+        "emailAddress": "bennyyang@cybersoft4u.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/37750224ff9425f581cdb0d0605abb99?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FB-6.png",
+          "24x24": "https://secure.gravatar.com/avatar/37750224ff9425f581cdb0d0605abb99?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FB-6.png",
+          "16x16": "https://secure.gravatar.com/avatar/37750224ff9425f581cdb0d0605abb99?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FB-6.png",
+          "32x32": "https://secure.gravatar.com/avatar/37750224ff9425f581cdb0d0605abb99?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FB-6.png"
+        },
+        "displayName": "BennyYang",
+        "active": true,
+        "timeZone": "Asia/Taipei",
+        "accountType": "atlassian"
+      },
+      "created": "2026-02-09T14:50:27.535+0800",
+      "updated": "2026-02-09T14:50:27.535+0800",
+      "jsdPublic": true
+    },
+    {
+      "self": "https://cybersoft4u.atlassian.net/rest/api/3/issue/116807/comment/200178",
+      "id": "200178",
+      "author": {
+        "self": "https://cybersoft4u.atlassian.net/rest/api/3/user?accountId=712020%3Af82e90f8-0a5e-48e8-8607-fce92632fd5f",
+        "accountId": "712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f",
+        "emailAddress": "maggiezheng@cybersoft.com.tw",
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/32"
+        },
+        "displayName": "MaggieZheng",
+        "active": true,
+        "timeZone": "Asia/Taipei",
+        "accountType": "atlassian"
+      },
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              { "type": "text", "text": "2026/02/26 定版，登入頁更換底圖" },
+              { "type": "hardBreak" },
+              {
+                "type": "text",
+                "text": "https://www.figma.com/design/FG6lrwNx0xgRSeTEHLSjIn/iFOMS-pg-use?node-id=0-1&p=f&t=E0OTyrhlkQOtYG4v-0",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://www.figma.com/design/FG6lrwNx0xgRSeTEHLSjIn/iFOMS-pg-use?node-id=0-1&p=f&t=E0OTyrhlkQOtYG4v-0"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "updateAuthor": {
+        "self": "https://cybersoft4u.atlassian.net/rest/api/3/user?accountId=712020%3Af82e90f8-0a5e-48e8-8607-fce92632fd5f",
+        "accountId": "712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f",
+        "emailAddress": "maggiezheng@cybersoft.com.tw",
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/32"
+        },
+        "displayName": "MaggieZheng",
+        "active": true,
+        "timeZone": "Asia/Taipei",
+        "accountType": "atlassian"
+      },
+      "created": "2026-02-26T16:04:56.736+0800",
+      "updated": "2026-02-26T16:05:30.036+0800",
+      "jsdPublic": true
+    },
+    {
+      "self": "https://cybersoft4u.atlassian.net/rest/api/3/issue/116807/comment/208405",
+      "id": "208405",
+      "author": {
+        "self": "https://cybersoft4u.atlassian.net/rest/api/3/user?accountId=6205ff09f5d29a0068fc8ef5",
+        "accountId": "6205ff09f5d29a0068fc8ef5",
+        "emailAddress": "bennyyang@cybersoft4u.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/37750224ff9425f581cdb0d0605abb99?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FB-6.png",
+          "24x24": "https://secure.gravatar.com/avatar/37750224ff9425f581cdb0d0605abb99?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FB-6.png",
+          "16x16": "https://secure.gravatar.com/avatar/37750224ff9425f581cdb0d0605abb99?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FB-6.png",
+          "32x32": "https://secure.gravatar.com/avatar/37750224ff9425f581cdb0d0605abb99?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FB-6.png"
+        },
+        "displayName": "BennyYang",
+        "active": true,
+        "timeZone": "Asia/Taipei",
+        "accountType": "atlassian"
+      },
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "提取要求 3838",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://tfs.cybersoft.tw:8081/tfs/OAS/30_iFOMS/_git/ifoms-frontend/pullrequest/3838?_a=overview"
+                    }
+                  }
+                ]
+              },
+              { "type": "text", "text": ": Merge IFOMS-38 into master" }
+            ]
+          }
+        ]
+      },
+      "updateAuthor": {
+        "self": "https://cybersoft4u.atlassian.net/rest/api/3/user?accountId=6205ff09f5d29a0068fc8ef5",
+        "accountId": "6205ff09f5d29a0068fc8ef5",
+        "emailAddress": "bennyyang@cybersoft4u.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/37750224ff9425f581cdb0d0605abb99?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FB-6.png",
+          "24x24": "https://secure.gravatar.com/avatar/37750224ff9425f581cdb0d0605abb99?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FB-6.png",
+          "16x16": "https://secure.gravatar.com/avatar/37750224ff9425f581cdb0d0605abb99?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FB-6.png",
+          "32x32": "https://secure.gravatar.com/avatar/37750224ff9425f581cdb0d0605abb99?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FB-6.png"
+        },
+        "displayName": "BennyYang",
+        "active": true,
+        "timeZone": "Asia/Taipei",
+        "accountType": "atlassian"
+      },
+      "created": "2026-03-26T11:34:39.051+0800",
+      "updated": "2026-03-26T11:34:39.051+0800",
+      "jsdPublic": true
+    },
+    {
+      "self": "https://cybersoft4u.atlassian.net/rest/api/3/issue/116807/comment/208748",
+      "id": "208748",
+      "author": {
+        "self": "https://cybersoft4u.atlassian.net/rest/api/3/user?accountId=712020%3Af2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e",
+        "accountId": "712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e",
+        "emailAddress": "jjaywang@cybersoft.com.tw",
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/32"
+        },
+        "displayName": "JJayWang",
+        "active": true,
+        "timeZone": "Asia/Taipei",
+        "accountType": "atlassian"
+      },
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [{ "type": "text", "text": "Code Review OK" }]
+          }
+        ]
+      },
+      "updateAuthor": {
+        "self": "https://cybersoft4u.atlassian.net/rest/api/3/user?accountId=712020%3Af2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e",
+        "accountId": "712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e",
+        "emailAddress": "jjaywang@cybersoft.com.tw",
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/32"
+        },
+        "displayName": "JJayWang",
+        "active": true,
+        "timeZone": "Asia/Taipei",
+        "accountType": "atlassian"
+      },
+      "created": "2026-03-26T23:26:08.347+0800",
+      "updated": "2026-03-26T23:26:08.347+0800",
+      "jsdPublic": true
+    },
+    {
+      "self": "https://cybersoft4u.atlassian.net/rest/api/3/issue/116807/comment/211962",
+      "id": "211962",
+      "author": {
+        "self": "https://cybersoft4u.atlassian.net/rest/api/3/user?accountId=712020%3Af82e90f8-0a5e-48e8-8607-fce92632fd5f",
+        "accountId": "712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f",
+        "emailAddress": "maggiezheng@cybersoft.com.tw",
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/32"
+        },
+        "displayName": "MaggieZheng",
+        "active": true,
+        "timeZone": "Asia/Taipei",
+        "accountType": "atlassian"
+      },
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              { "type": "text", "text": "後端訊息有調整，前端要對應調整" }
+            ]
+          }
+        ]
+      },
+      "updateAuthor": {
+        "self": "https://cybersoft4u.atlassian.net/rest/api/3/user?accountId=712020%3Af82e90f8-0a5e-48e8-8607-fce92632fd5f",
+        "accountId": "712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f",
+        "emailAddress": "maggiezheng@cybersoft.com.tw",
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f82e90f8-0a5e-48e8-8607-fce92632fd5f/290e8fab-a073-4772-b628-e597e90ff36a/32"
+        },
+        "displayName": "MaggieZheng",
+        "active": true,
+        "timeZone": "Asia/Taipei",
+        "accountType": "atlassian"
+      },
+      "created": "2026-05-06T17:54:06.001+0800",
+      "updated": "2026-05-06T17:54:06.001+0800",
+      "jsdPublic": true
+    },
+    {
+      "self": "https://cybersoft4u.atlassian.net/rest/api/3/issue/116807/comment/212008",
+      "id": "212008",
+      "author": {
+        "self": "https://cybersoft4u.atlassian.net/rest/api/3/user?accountId=712020%3Af2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e",
+        "accountId": "712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e",
+        "emailAddress": "jjaywang@cybersoft.com.tw",
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/32"
+        },
+        "displayName": "JJayWang",
+        "active": true,
+        "timeZone": "Asia/Taipei",
+        "accountType": "atlassian"
+      },
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              { "type": "text", "text": "PR " },
+              {
+                "type": "text",
+                "text": "提取要求 4078: Merge IFOMS-38-0507 into master",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://tfs.cybersoft.tw:8081/tfs/OAS/30_iFOMS/_git/ifoms-frontend/pullrequest/4078?_a=overview"
+                    }
+                  }
+                ]
+              }
+            ],
+            "attrs": { "localId": "98d2db419c76" }
+          }
+        ]
+      },
+      "updateAuthor": {
+        "self": "https://cybersoft4u.atlassian.net/rest/api/3/user?accountId=712020%3Af2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e",
+        "accountId": "712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e",
+        "emailAddress": "jjaywang@cybersoft.com.tw",
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:f2f20f5d-6a43-4ac0-b61e-09bfb5d55e2e/66257969-c904-40fa-885d-ed9f7d90cf6a/32"
+        },
+        "displayName": "JJayWang",
+        "active": true,
+        "timeZone": "Asia/Taipei",
+        "accountType": "atlassian"
+      },
+      "created": "2026-05-08T10:31:12.116+0800",
+      "updated": "2026-05-08T10:31:12.116+0800",
+      "jsdPublic": true
+    },
+    {
+      "self": "https://cybersoft4u.atlassian.net/rest/api/3/issue/116807/comment/212056",
+      "id": "212056",
+      "author": {
+        "self": "https://cybersoft4u.atlassian.net/rest/api/3/user?accountId=6205ff09f5d29a0068fc8ef5",
+        "accountId": "6205ff09f5d29a0068fc8ef5",
+        "emailAddress": "bennyyang@cybersoft4u.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/37750224ff9425f581cdb0d0605abb99?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FB-6.png",
+          "24x24": "https://secure.gravatar.com/avatar/37750224ff9425f581cdb0d0605abb99?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FB-6.png",
+          "16x16": "https://secure.gravatar.com/avatar/37750224ff9425f581cdb0d0605abb99?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FB-6.png",
+          "32x32": "https://secure.gravatar.com/avatar/37750224ff9425f581cdb0d0605abb99?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FB-6.png"
+        },
+        "displayName": "BennyYang",
+        "active": true,
+        "timeZone": "Asia/Taipei",
+        "accountType": "atlassian"
+      },
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [{ "type": "text", "text": "code review ok" }],
+            "attrs": { "localId": "3857e1b2a70e" }
+          }
+        ]
+      },
+      "updateAuthor": {
+        "self": "https://cybersoft4u.atlassian.net/rest/api/3/user?accountId=6205ff09f5d29a0068fc8ef5",
+        "accountId": "6205ff09f5d29a0068fc8ef5",
+        "emailAddress": "bennyyang@cybersoft4u.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/37750224ff9425f581cdb0d0605abb99?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FB-6.png",
+          "24x24": "https://secure.gravatar.com/avatar/37750224ff9425f581cdb0d0605abb99?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FB-6.png",
+          "16x16": "https://secure.gravatar.com/avatar/37750224ff9425f581cdb0d0605abb99?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FB-6.png",
+          "32x32": "https://secure.gravatar.com/avatar/37750224ff9425f581cdb0d0605abb99?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FB-6.png"
+        },
+        "displayName": "BennyYang",
+        "active": true,
+        "timeZone": "Asia/Taipei",
+        "accountType": "atlassian"
+      },
+      "created": "2026-05-11T14:33:48.669+0800",
+      "updated": "2026-05-11T14:33:48.669+0800",
+      "jsdPublic": true
+    }
+  ]
+}

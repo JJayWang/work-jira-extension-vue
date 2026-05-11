@@ -1,0 +1,1 @@
+import{_ as e,i as t,o as n,t as r,u as i}from"./runtime-core.esm-bundler-DU_9R5FU.js";import{r as a}from"./index-DQmgcbqw.js";var o=i({__name:`TheWelcome`,setup(i){let o=()=>{a.postMessage({type:`SETTING_TOKEN`})};return(i,a)=>(e(),n(r,null,[a[0]||=t(`h3`,null,`尚未設定 Token`,-1),t(`button`,{class:`vscode-btn-style`,onClick:o},`設定 Token`)],64))}});export{o as default};

@@ -1,16 +1,24 @@
 {
+  "_runtime-core.esm-bundler-DU_9R5FU.js": {
+    "file": "assets/runtime-core.esm-bundler-DU_9R5FU.js",
+    "name": "runtime-core.esm-bundler"
+  },
   "index.html": {
-    "file": "assets/index-BBuvIH_R.js",
+    "file": "assets/index-DQmgcbqw.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
+    "imports": [
+      "_runtime-core.esm-bundler-DU_9R5FU.js"
+    ],
     "dynamicImports": [
       "src/views/TheWelcome.vue",
       "src/layout/MainLaylout.vue",
-      "src/views/JiraList.vue"
+      "src/views/JiraList.vue",
+      "src/views/IssueInfo.vue"
     ],
     "css": [
-      "assets/index-CjO3QRVM.css"
+      "assets/index-fcBJUq0w.css"
     ],
     "assets": [
       "assets/codicon-DjkITdqj.ttf"
@@ -21,33 +29,46 @@
     "src": "node_modules/@vscode/codicons/dist/codicon.ttf"
   },
   "src/layout/MainLaylout.vue": {
-    "file": "assets/MainLaylout-DsEIj-Ze.js",
+    "file": "assets/MainLaylout-DeQixjd3.js",
     "name": "MainLaylout",
     "src": "src/layout/MainLaylout.vue",
     "isDynamicEntry": true,
     "imports": [
-      "index.html"
+      "index.html",
+      "_runtime-core.esm-bundler-DU_9R5FU.js"
+    ]
+  },
+  "src/views/IssueInfo.vue": {
+    "file": "assets/IssueInfo-BsyEj36X.js",
+    "name": "IssueInfo",
+    "src": "src/views/IssueInfo.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_runtime-core.esm-bundler-DU_9R5FU.js"
     ]
   },
   "src/views/JiraList.vue": {
-    "file": "assets/JiraList-Arw2x47J.js",
+    "file": "assets/JiraList-CZH54BG4.js",
     "name": "JiraList",
     "src": "src/views/JiraList.vue",
     "isDynamicEntry": true,
     "imports": [
-      "index.html"
+      "index.html",
+      "_runtime-core.esm-bundler-DU_9R5FU.js"
     ],
     "css": [
-      "assets/JiraList-DkYlkNAn.css"
+      "assets/JiraList-CEHw6_CK.css"
     ]
   },
   "src/views/TheWelcome.vue": {
-    "file": "assets/TheWelcome-BtoIjQ8H.js",
+    "file": "assets/TheWelcome-zKPIoAdl.js",
     "name": "TheWelcome",
     "src": "src/views/TheWelcome.vue",
     "isDynamicEntry": true,
     "imports": [
-      "index.html"
+      "index.html",
+      "_runtime-core.esm-bundler-DU_9R5FU.js"
     ]
   }
 }

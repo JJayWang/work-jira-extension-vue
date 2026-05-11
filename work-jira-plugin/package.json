@@ -39,6 +39,10 @@
       {
         "command": "work-jira-extension.changeStatus",
         "title": "Change Status"
+      },
+      {
+        "command": "work-jira-extension.viewIssue",
+        "title": "WorkJira: 檢視工作單"
       }
     ],
     "viewsContainers": {

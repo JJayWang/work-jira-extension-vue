@@ -54,7 +54,7 @@ export async function activate(context: vscode.ExtensionContext) {
     }),
   );
 
-  /** 取得工作單資料 */
+  /** 取得工作單列表 */
   context.subscriptions.push(
     vscode.commands.registerCommand(
       COMMAND_VAL.SyncIssue,
@@ -107,6 +107,31 @@ export async function activate(context: vscode.ExtensionContext) {
         }
       }
     }),
+  );
+
+  /** 檢視工作單 */
+  context.subscriptions.push(
+    vscode.commands.registerCommand(
+      COMMAND_VAL.ViewIssue,
+      async (key: string) => {
+        if (await context.secrets.get(tokenKey)) {
+          if (!key) {
+            key =
+              (await vscode.window.showInputBox({
+                prompt: "請輸入工作單編號",
+                ignoreFocusOut: true,
+              })) || "";
+          }
+
+          provider.setLoading(true);
+          const issue = await jiraService.getIssue(key);
+          console.log(issue);
+          provider.setLoading(false);
+
+          provider.displayIssue(issue);
+        }
+      },
+    ),
   );
 
   context.subscriptions.push(

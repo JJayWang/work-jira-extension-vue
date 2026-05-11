@@ -10,16 +10,19 @@
             {{ item.status.name }}
           </span>
         </div>
-        <span class="codicon codicon-gear"></span>
+        <span class="codicon codicon-gear" @click="onEditIssue(item.key)"></span>
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, onUnmounted, onMounted } from 'vue';
+import { ref, onUnmounted } from 'vue';
+import { useRouter } from 'vue-router';
 import { vscode, registEvent } from '@/utils/vscode';
 import type { IssueStateType } from '@/types/VSCodeState';
+
+const router = useRouter();
 
 const state = vscode.getAllState();
 const jiraList = ref<IssueStateType[]>(state.hasToken ? state.issues : []);
@@ -29,6 +32,11 @@ const evts = [
     jiraList.value = vscode.getState('issues');
   }),
 ];
+
+const onEditIssue = (id: string) => {
+  vscode.postMessage({ type: 'test', value: id });
+  // router.push(`/issue/${id}`);
+};
 
 onUnmounted(() => {
   evts.map((destroy) => destroy());

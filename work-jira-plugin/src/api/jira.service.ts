@@ -33,6 +33,27 @@ export class JiraApiService {
     return (await resp.json()) as JiraIssueApiResp;
   }
 
+  public async getIssue(key: string) {
+    const token = await this._getToken();
+
+    const params = new URLSearchParams({
+      fields: "*all",
+      failFast: "true",
+    });
+
+    const resp = await fetch(
+      `${this._baseUrl}/rest/api/3/issue/${key}?${params.toString()}`,
+      {
+        method: "GET",
+        headers: {
+          Authorization: `Basic ${btoa(token)}`,
+        },
+      },
+    );
+
+    return await resp.json();
+  }
+
   public async getStatus() {
     const resp = await fetch(
       `${this._baseUrl}/rest/api/3/project/IFOMS/statuses`,

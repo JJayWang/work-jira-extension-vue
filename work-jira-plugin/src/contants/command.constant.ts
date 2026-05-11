@@ -3,4 +3,5 @@ export const COMMAND_VAL = {
   RemoveToken: "work-jira-extension.removeToken",
   SyncIssue: "work-jira-extension.syncJira",
   ChangeStatus: "work-jira-extension.changeStatus",
-};
+  ViewIssue: "work-jira-extension.viewIssue",
+} as const;
